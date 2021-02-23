@@ -14,8 +14,7 @@ is
   
    package AATIO renames Ada.Text_IO;
    
-   procedure open_text_file (fname1 : String; fmode1 : AATIO.File_Mode); 	
-   
+   procedure open_inp_textfile (fhandle: out AATIO.File_Type; fmode : in AATIO.File_Mode; fname : in String);	  
 
 -- ========================================================
 end pkg_ada_read_file;

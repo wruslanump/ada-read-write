@@ -12,7 +12,7 @@ RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_ELABORATION_CODE
 RV SPARK_05
 
-U pkg_ada_read_file%b	pkg_ada_read_file.adb	35e194f0 OO PK IL
+U pkg_ada_read_file%b	pkg_ada_read_file.adb	cca3b342 OO PK IL
 W ada%s			ada.ads			ada.ali
 W ada.command_line%s	a-comlin.adb		a-comlin.ali
 W ada.numerics%s	a-numeri.ads		a-numeri.ali
@@ -27,7 +27,7 @@ W pkg_ada_dtstamp%s	pkg_ada_dtstamp.adb	pkg_ada_dtstamp.ali
 Z system.soft_links%s	s-soflin.adb		s-soflin.ali
 Z system.standard_library%s  s-stalib.adb	s-stalib.ali
 
-U pkg_ada_read_file%s	pkg_ada_read_file.ads	ec4aec12 EE NE OO PK IL
+U pkg_ada_read_file%s	pkg_ada_read_file.ads	33fa0d38 EE NE OO PK IL
 W ada%s			ada.ads			ada.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
 
@@ -55,8 +55,8 @@ D interfac.ads		20200312110721 5ab55268 interfaces%s
 D i-c.ads		20200312110721 5421119b interfaces.c%s
 D i-cstrea.ads		20200312110721 e53d8b8e interfaces.c_streams%s
 D pkg_ada_dtstamp.ads	20210221081420 f15ab596 pkg_ada_dtstamp%s
-D pkg_ada_read_file.ads	20210223095138 64575f48 pkg_ada_read_file%s
-D pkg_ada_read_file.adb	20210223095145 6c3d4ba4 pkg_ada_read_file%b
+D pkg_ada_read_file.ads	20210223114922 bbe7be62 pkg_ada_read_file%s
+D pkg_ada_read_file.adb	20210223114949 4acf8d3c pkg_ada_read_file%b
 D system.ads		20200312110721 4635ec04 system%s
 D s-atacco.ads		20200312110721 4c36d12f system.address_to_access_conversions%s
 D s-atocou.ads		20200312110721 b45c2d8d system.atomic_counters%s
@@ -108,22 +108,25 @@ X 17 a-suteio.ads
 39K31*Text_IO 61e34 26|18w28
 X 19 a-textio.ads
 49K13*Text_IO 471e16 25|7w10 15r30 26|9w10 31r29
-52P9*File_Type 26|45r40
-53E9*File_Mode 53e54 25|17r62 26|48r20 49r20 50r20 58r60
+52P9*File_Type 25|17r52 26|45r40 58r52
+53E9*File_Mode 53e54 25|17r80 26|48r20 49r20 50r20 58r79
 53n23*In_File{53E9} 26|50r38
 53n32*Out_File{53E9} 26|48r38
 53n42*Append_File{53E9} 26|49r38
+92U14*Open 26|63s12
 263U14*Put_Line 26|64s12
 X 24 pkg_ada_dtstamp.ads
 10K9*pkg_ada_dtstamp 31e20 26|23w6
 X 25 pkg_ada_read_file.ads
-10K9*pkg_ada_read_file 21l5 21e22 26|26b14 78l5 78t22
-15K12*AATIO=15:30 17r56
-17U14*open_text_file 17>30 17>47 26|58b14 66l8 66t22
-17a30 fname1{string} 26|58b29
-17e47 fmode1{19|53E9} 26|58b46
+10K9*pkg_ada_read_file 20l5 20e22 26|26b14 79l5 79t22
+15K12*AATIO=15:30 17r46 17r74
+17U14*open_inp_textfile 17<33 17>63 17>91 26|58b14 67l8 67t25
+17p33 fhandle{19|52P9} 26|58b33 63m18
+17e63 fmode{19|53E9} 26|58b63 63r27
+17a91 fname{string} 26|58b90 63r34
 X 26 pkg_ada_read_file.adb
-31K12 ATIO=31:29 45r35 48r15 48r33 49r15 49r33 50r15 50r33 58r55 64r7
+31K12 ATIO=31:29 45r35 48r15 48r33 49r15 49r33 50r15 50r33 58r47 58r74 63r7
+. 64r7
 32K12 ASU=32:37 35r17 36r17 37r17 38r17
 35r4 datestring{16|79R9}
 36r4 timestring{16|79R9}

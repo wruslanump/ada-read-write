@@ -55,15 +55,16 @@ is
    fname3   : String := "../files/test3.txt";
 
    -- ==================================================== 
-   procedure open_text_file(fname1 : String; fmode1 : ATIO.File_Mode) 	
+   procedure open_inp_textfile (fhandle : out ATIO.File_Type; fmode : in ATIO.File_Mode; fname : in String)	
    -- =====================================================   
      is
       
-	begin
-	  
-      ATIO.Put_line("Random integer (1..100) = ");
+   begin
+      ATIO.Open (fhandle, fmode, fname);
+      ATIO.Put_line("Executed open_inp_textfile (fhandle: out ATIO.File_Type; fmode : in ATIO.File_Mode; fname : in String);");
       
-   end open_text_file;
+     
+   end open_inp_textfile;
    
    -- =====================================================
    
