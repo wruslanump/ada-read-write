@@ -38,15 +38,20 @@ is
    inp_UBlineStr : ASU.Unbounded_String;
    inp_lineStr   : String  := ASU.To_String(inp_UBlineStr);
    len_UBlineStr : Natural := 0;
-   inp_lineCnt   : Integer := 999;
-   inp_sliceStr  : ASU.Unbounded_String;
+   inp_lineCnt_All     : Integer := 0;
+   inp_lineCnt_NonZero : Integer := 0; 
+   inp_sliceStr  : String  := " ";
    
    -- OUTPUT FILE
    -- =====================================================
-   out_fhandle : ATIO.File_Type;
-   out_fmode   : ATIO.File_Mode  := ATIO.Out_File;
+   out_fhandle_00 : ATIO.File_Type;
+   out_fmode_00   : ATIO.File_Mode  := ATIO.Out_File;
    out_fname_00 : String          := "files/outfile_level_00.txt";
+   
+   out_fhandle_01 : ATIO.File_Type;
+   out_fmode_01   : ATIO.File_Mode  := ATIO.Out_File;
    out_fname_01 : String          := "files/outfile_level_01.txt";
+   
    out_lineStr : ASU.Unbounded_String;
    out_lineCnt : Integer := 999;
    
@@ -71,40 +76,53 @@ begin
    -- Get string length of line read
    -- Write read line to Standard_Output (terminal)
    -- Count total lines in file.
+   -- REF: https://en.wikibooks.org/wiki/Ada_Programming/Libraries/Ada.Strings.Unbounded
+   -- REF: https://www.radford.edu/~nokie/classes/320/stringio.html
    
    ATIO.Open (inp_fhandle, inp_fmode, inp_fname);
-   inp_lineCnt := 0;
+   
+   
+   -- CREATE FILE FOR OUTPUT. 
+   -- New file. If already exists, wipes out previous file.
+   -- Must Create NOT Open. Create for writing only.
+   ATIO.Create (out_fhandle_00, out_fmode_00, out_fname_00);
+      
+   inp_lineCnt_All := 0;
+   
    while not ATIO.End_Of_File (inp_fhandle) loop
       inp_UBlineStr := ASU.To_Unbounded_String(ATIO.Get_Line (inp_fhandle));
-      
-      -- REF: https://en.wikibooks.org/wiki/Ada_Programming/Libraries/Ada.Strings.Unbounded
-      -- function Length(Source : in Unbounded_String) return Natural;
       len_UBlineStr := ASU.Length(inp_UBlineStr);
-      inp_lineCnt := inp_lineCnt + 1;
-       
-      -- FIND IF FIRST CHAR IS "("
-      -- function Unbounded_Slice  (Source : in Unbounded_String; Low : in Positive; High  : in Natural) return Unbounded_String;
-      -- inp_sliceStr := ASU.Unbounded_Slice (inp_UBlineStr, 1, 1);
+      inp_lineCnt_All := inp_lineCnt_All + 1;
       
-      ATIO.Put ("inp_lineCnt = "   & Integer'image (inp_lineCnt) & " ");
-      ATIO.Put ("len_UBlineStr = " & Natural'Image (len_UBlineStr) & " ");
-      ATIO.Put ("first char inp_UBlineStr = " & ASU.To_String (inp_sliceStr) & " ");
-      ATIO.Put_Line (ATIO.Standard_Output, ASU.To_String (inp_UBLineStr)); 
+      -- EXTRACT ONLY NON BLANK LINES
+      if len_UBlineStr /= 0 then
+         inp_lineCnt_NonZero := inp_lineCnt_NonZero + 1;
+              
+         ATIO.Put ("inp_lineCnt = "   & Integer'image (inp_lineCnt_All) & " ");
+         ATIO.Put ("len_UBlineStr = " & Natural'Image (len_UBlineStr) & " ");
          
-      
-      
+         -- WRITE OUTPUT TO SCREEN TERMINAL (Standard_Output) 
+         ATIO.Put_Line (ATIO.Standard_Output, ASU.To_String (inp_UBLineStr)); 
+         -- ATIO.Set_Output(ATIO.Standard_Output);
+         -- ATIO.Put_Line (ASU.To_String (inp_UBLineStr)); 
+         
+         -- WRITE OUTPUT TO TEXT FILE out_fname_00 = "files/outfile_level_00.txt"; 
+         ATIO.Put_Line (out_fhandle_00, ASU.To_String (inp_UBLineStr)); 
+         -- ATIO.Set_Output(out_fhandle_00);
+         -- ATIO.Put_Line (ASU.To_String (inp_UBLineStr)); 
+         
+      end if;
+      -- ATIO.Set_Output(ATIO.Standard_Output);  -- Reset display to terminal
+           
    end loop;
-   ATIO.Put_Line (ATIO.Standard_Output, "Total lines read = " & Integer'Image (inp_lineCnt));
-      
-   -- (2) Process file
    
+   ATIO.Put_Line (ATIO.Standard_Output, "Total lines read    = " & Integer'Image (inp_lineCnt_All));
+   ATIO.Put_Line (ATIO.Standard_Output, "Non-zero lines read = " & Integer'Image (inp_lineCnt_NonZero));
    
+   ATIO.Close (out_fhandle_00);
+   ATIO.Close (inp_fhandle);
    
-   
-   -- (3) Write file
-   
-   
-      
+         
    ATIO.New_Line; PADTS.dtstamp; ATIO.Put_Line ("Alhamdulillah 3 times WRY");
 -- ========================================================   
 end main_ada_read_write;
