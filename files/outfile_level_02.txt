@@ -1,0 +1,11 @@
+
+out_countHash =  7
+out_countG   =  211
+out_countG00 =  37
+out_countG01 =  93
+out_countG02 =  40
+out_countG03 =  40
+out_countG21 =  1
+
+out_lineCnt  =  218
+
