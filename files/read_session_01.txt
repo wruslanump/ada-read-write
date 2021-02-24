@@ -1,0 +1,18 @@
+gprbuild -d -P/home/wruslan/github-ump/ada-read-write/ada_read_write.gpr -s -k
+Compile
+   [Ada]          main_ada_read_write.adb
+   [Ada]          pkg_ada_dtstamp.adb
+   [Ada]          pkg_ada_read_file.adb
+Bind
+   [gprbind]      main_ada_read_write.bexch
+   [Ada]          main_ada_read_write.ali
+Link
+   [link]         main_ada_read_write.adb
+[2021-02-24 16:14:58] process terminated successfully, elapsed time: 01.36s
+
+EXECUTION
+=====================================================
+/home/wruslan/github-ump/ada-read-write/exec/main_ada_read_write.adx
+2021-02-24 08:18:50.64718225261 Bismillah 3 times WRY
+2021-02-24 08:18:50.64718255261 Running inside GNAT Studio Community
+

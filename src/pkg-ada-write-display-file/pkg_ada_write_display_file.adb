@@ -1,4 +1,4 @@
--- File	: pkg_ada_read_file.adb
+-- File	: pkg_ada_write_display_file.adb
 -- Date	: Tue 23 Feb 2021 04:39:09 PM +08
 -- Env	: Linux HPEliteBook8470p-Ub2004-rt38 5.4.66-rt38 
 -- #1 SMP PREEMPT_RT Sat Sep 26 16:51:59 +08 2020 x86_64 x86_64 x86_64 GNU/Linux
@@ -23,7 +23,7 @@ with Ada.Command_Line;
 with pkg_ada_dtstamp;
 
 -- ========================================================
-package body pkg_ada_read_file 
+package body pkg_ada_write_display_file 
 -- ========================================================
 --   with SPARK_Mode => on
 is
@@ -37,22 +37,7 @@ is
    lineString : ASU.Unbounded_String;
    UBStr      : ASU.Unbounded_String; 
       
-   --Str        : String (1..15);
    
-   lenUBStr   : Integer := 0;
-   
-   -- Declare file handle 
-   fhandle1, fhandle2, fhandle3 : ATIO.File_Type;
-   
-   -- Three file modes allowed  
-   fmode1   : ATIO.File_Mode := ATIO.Out_File;   
-   fmode2   : ATIO.File_Mode := ATIO.Append_File; 
-   fmode3   : ATIO.File_Mode := ATIO.In_File;
-   
-   -- Declare filenames
-   fname1   : String := "../files/test1.txt";
-   fname2   : String := "../files/test2.txt";
-   fname3   : String := "../files/test3.txt";
 
    -- ==================================================== 
    procedure open_inp_textfile (fhandle : out ATIO.File_Type; fmode : in ATIO.File_Mode; fname : in String)	
@@ -67,16 +52,22 @@ is
    end open_inp_textfile;
    
    -- =====================================================
-   
+   procedure about_pkg_ada_write_display_file
    -- =====================================================
+   is 
    
-   
+   begin 
+      ATIO.Put_Line("About_pkg_ada_write_display_file (PAWDF)");
 
--- =======================================================   
+   end about_pkg_ada_write_display_file;
+   -- =======================================================   
+   
+   
+   
 begin
   null;
 -- ========================================================
-end pkg_ada_read_file;
+end pkg_ada_write_display_file;
 -- ========================================================    
    
   

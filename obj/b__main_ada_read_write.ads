@@ -37,7 +37,7 @@ package ada_main is
    pragma Export (C, main, "main");
 
    type Version_32 is mod 2 ** 32;
-   u00001 : constant Version_32 := 16#8bd45b1a#;
+   u00001 : constant Version_32 := 16#4e7c4d83#;
    pragma Export (C, u00001, "main_ada_read_writeB");
    u00002 : constant Version_32 := 16#050ff2f0#;
    pragma Export (C, u00002, "system__standard_libraryB");
@@ -441,16 +441,48 @@ package ada_main is
    pragma Export (C, u00201, "system__img_decB");
    u00202 : constant Version_32 := 16#e818e5df#;
    pragma Export (C, u00202, "system__img_decS");
-   u00203 : constant Version_32 := 16#cca3b342#;
-   pragma Export (C, u00203, "pkg_ada_read_fileB");
-   u00204 : constant Version_32 := 16#33fa0d38#;
-   pragma Export (C, u00204, "pkg_ada_read_fileS");
+   u00203 : constant Version_32 := 16#b224e7e8#;
+   pragma Export (C, u00203, "pkg_ada_randomB");
+   u00204 : constant Version_32 := 16#03e92377#;
+   pragma Export (C, u00204, "pkg_ada_randomS");
    u00205 : constant Version_32 := 16#cd2959fb#;
    pragma Export (C, u00205, "ada__numericsS");
-   u00206 : constant Version_32 := 16#2323a8af#;
-   pragma Export (C, u00206, "system__memoryB");
-   u00207 : constant Version_32 := 16#1f488a30#;
-   pragma Export (C, u00207, "system__memoryS");
+   u00206 : constant Version_32 := 16#d976e2b4#;
+   pragma Export (C, u00206, "ada__numerics__float_randomB");
+   u00207 : constant Version_32 := 16#62aa8dd2#;
+   pragma Export (C, u00207, "ada__numerics__float_randomS");
+   u00208 : constant Version_32 := 16#ec9cfed1#;
+   pragma Export (C, u00208, "system__random_numbersB");
+   u00209 : constant Version_32 := 16#852d5c9e#;
+   pragma Export (C, u00209, "system__random_numbersS");
+   u00210 : constant Version_32 := 16#e0ac52ca#;
+   pragma Export (C, u00210, "system__random_seedB");
+   u00211 : constant Version_32 := 16#1d25c55f#;
+   pragma Export (C, u00211, "system__random_seedS");
+   u00212 : constant Version_32 := 16#8aa4f090#;
+   pragma Export (C, u00212, "system__img_realB");
+   u00213 : constant Version_32 := 16#819dbde6#;
+   pragma Export (C, u00213, "system__img_realS");
+   u00214 : constant Version_32 := 16#3e932977#;
+   pragma Export (C, u00214, "system__img_lluB");
+   u00215 : constant Version_32 := 16#3b7a9044#;
+   pragma Export (C, u00215, "system__img_lluS");
+   u00216 : constant Version_32 := 16#1e6dd63c#;
+   pragma Export (C, u00216, "pkg_ada_read_display_fileB");
+   u00217 : constant Version_32 := 16#7a6d3d3b#;
+   pragma Export (C, u00217, "pkg_ada_read_display_fileS");
+   u00218 : constant Version_32 := 16#bdba74cb#;
+   pragma Export (C, u00218, "pkg_ada_read_write_fileB");
+   u00219 : constant Version_32 := 16#ce281218#;
+   pragma Export (C, u00219, "pkg_ada_read_write_fileS");
+   u00220 : constant Version_32 := 16#b36d571e#;
+   pragma Export (C, u00220, "pkg_ada_write_display_fileB");
+   u00221 : constant Version_32 := 16#3035fd5b#;
+   pragma Export (C, u00221, "pkg_ada_write_display_fileS");
+   u00222 : constant Version_32 := 16#2323a8af#;
+   pragma Export (C, u00222, "system__memoryB");
+   u00223 : constant Version_32 := 16#1f488a30#;
+   pragma Export (C, u00223, "system__memoryS");
 
    --  BEGIN ELABORATION ORDER
    --  ada%s
@@ -503,6 +535,8 @@ package ada_main is
    --  system.traceback_entries%s
    --  system.traceback_entries%b
    --  system.unsigned_types%s
+   --  system.img_llu%s
+   --  system.img_llu%b
    --  system.img_uns%s
    --  system.img_uns%b
    --  system.wch_con%s
@@ -606,6 +640,8 @@ package ada_main is
    --  ada.finalization%s
    --  system.file_io%s
    --  system.file_io%b
+   --  system.img_real%s
+   --  system.img_real%b
    --  system.linux%s
    --  system.multiprocessors%s
    --  system.multiprocessors%b
@@ -655,10 +691,22 @@ package ada_main is
    --  ada.text_io%b
    --  ada.strings.unbounded.text_io%s
    --  ada.strings.unbounded.text_io%b
+   --  system.random_seed%s
+   --  system.random_seed%b
+   --  system.random_numbers%s
+   --  system.random_numbers%b
+   --  ada.numerics.float_random%s
+   --  ada.numerics.float_random%b
    --  pkg_ada_dtstamp%s
    --  pkg_ada_dtstamp%b
-   --  pkg_ada_read_file%s
-   --  pkg_ada_read_file%b
+   --  pkg_ada_random%s
+   --  pkg_ada_random%b
+   --  pkg_ada_read_display_file%s
+   --  pkg_ada_read_display_file%b
+   --  pkg_ada_read_write_file%s
+   --  pkg_ada_read_write_file%b
+   --  pkg_ada_write_display_file%s
+   --  pkg_ada_write_display_file%b
    --  main_ada_read_write%b
    --  END ELABORATION ORDER
 

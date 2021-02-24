@@ -38,8 +38,12 @@ package body ada_main is
    E174 : Short_Integer; pragma Import (Ada, E174, "ada__calendar__time_zones_E");
    E097 : Short_Integer; pragma Import (Ada, E097, "ada__real_time_E");
    E161 : Short_Integer; pragma Import (Ada, E161, "ada__text_io_E");
+   E211 : Short_Integer; pragma Import (Ada, E211, "system__random_seed_E");
    E168 : Short_Integer; pragma Import (Ada, E168, "pkg_ada_dtstamp_E");
-   E204 : Short_Integer; pragma Import (Ada, E204, "pkg_ada_read_file_E");
+   E204 : Short_Integer; pragma Import (Ada, E204, "pkg_ada_random_E");
+   E217 : Short_Integer; pragma Import (Ada, E217, "pkg_ada_read_display_file_E");
+   E219 : Short_Integer; pragma Import (Ada, E219, "pkg_ada_read_write_file_E");
+   E221 : Short_Integer; pragma Import (Ada, E221, "pkg_ada_write_display_file_E");
 
    Sec_Default_Sized_Stacks : array (1 .. 1) of aliased System.Secondary_Stack.SS_Stack (System.Parameters.Runtime_Default_Sec_Stack_Size);
 
@@ -255,10 +259,18 @@ package body ada_main is
       Ada.Text_Io'Elab_Spec;
       Ada.Text_Io'Elab_Body;
       E161 := E161 + 1;
+      System.Random_Seed'Elab_Body;
+      E211 := E211 + 1;
       pkg_ada_dtstamp'elab_body;
       E168 := E168 + 1;
-      pkg_ada_read_file'elab_body;
+      pkg_ada_random'elab_body;
       E204 := E204 + 1;
+      pkg_ada_read_display_file'elab_body;
+      E217 := E217 + 1;
+      pkg_ada_read_write_file'elab_body;
+      E219 := E219 + 1;
+      pkg_ada_write_display_file'elab_body;
+      E221 := E221 + 1;
    end adainit;
 
    procedure Ada_Main_Program;
@@ -295,7 +307,10 @@ package body ada_main is
 
 --  BEGIN Object file/option list
    --   /home/wruslan/github-ump/ada-read-write/obj/pkg_ada_dtstamp.o
-   --   /home/wruslan/github-ump/ada-read-write/obj/pkg_ada_read_file.o
+   --   /home/wruslan/github-ump/ada-read-write/obj/pkg_ada_random.o
+   --   /home/wruslan/github-ump/ada-read-write/obj/pkg_ada_read_display_file.o
+   --   /home/wruslan/github-ump/ada-read-write/obj/pkg_ada_read_write_file.o
+   --   /home/wruslan/github-ump/ada-read-write/obj/pkg_ada_write_display_file.o
    --   /home/wruslan/github-ump/ada-read-write/obj/main_ada_read_write.o
    --   -L/home/wruslan/github-ump/ada-read-write/obj/
    --   -L/home/wruslan/github-ump/ada-read-write/obj/

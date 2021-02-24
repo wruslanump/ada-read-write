@@ -5,7 +5,10 @@ b__main_ada_read_write.o
 20210223084333
 [BOUND OBJECT FILES]
 /home/wruslan/github-ump/ada-read-write/obj/pkg_ada_dtstamp.o
-/home/wruslan/github-ump/ada-read-write/obj/pkg_ada_read_file.o
+/home/wruslan/github-ump/ada-read-write/obj/pkg_ada_random.o
+/home/wruslan/github-ump/ada-read-write/obj/pkg_ada_read_display_file.o
+/home/wruslan/github-ump/ada-read-write/obj/pkg_ada_read_write_file.o
+/home/wruslan/github-ump/ada-read-write/obj/pkg_ada_write_display_file.o
 /home/wruslan/github-ump/ada-read-write/obj/main_ada_read_write.o
 [GENERATED SOURCE FILES]
 b__main_ada_read_write.ads

@@ -8,4 +8,3 @@ out_countG03 =  40
 out_countG21 =  1
 
 out_lineCnt  =  218
-
