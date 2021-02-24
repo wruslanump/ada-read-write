@@ -1,7 +1,6 @@
 <?xml version="1.0"?>
 <Locations >
-  <Project>
-    <vfs_file>/home/wruslan/github-ump/ada-read-write/ada_read_write.gpr</vfs_file>
+  <Project >
     <file_marker column=" 1" line=" 1" >
       <vfs_project>/home/wruslan/github-ump/ada-read-write/ada_read_write.gpr</vfs_project>
       <vfs_file>/home/wruslan/github-ump/ada-read-write/src/main_ada_read_write.adb</vfs_file>
@@ -14,7 +13,7 @@
       <vfs_project>/home/wruslan/github-ump/ada-read-write/ada_read_write.gpr</vfs_project>
       <vfs_file>/home/wruslan/github-ump/ada-read-write/src/main_ada_read_write.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 1" line=" 113" >
+    <file_marker column=" 1" line=" 138" >
       <vfs_project>/home/wruslan/github-ump/ada-read-write/ada_read_write.gpr</vfs_project>
       <vfs_file>/home/wruslan/github-ump/ada-read-write/src/main_ada_read_write.adb</vfs_file>
     </file_marker>
@@ -134,7 +133,7 @@
       <vfs_project>/home/wruslan/github-ump/ada-read-write/ada_read_write.gpr</vfs_project>
       <vfs_file>/home/wruslan/github-ump/ada-read-write/src/pkg-ada-read-file/pkg_ada_read_file.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 3" line=" 66" >
+    <file_marker column=" 3" line=" 65" >
       <vfs_project>/home/wruslan/github-ump/ada-read-write/ada_read_write.gpr</vfs_project>
       <vfs_file>/home/wruslan/github-ump/ada-read-write/src/main_ada_read_write.adb</vfs_file>
     </file_marker>
@@ -166,11 +165,11 @@
       <vfs_project>/home/wruslan/github-ump/ada-read-write/ada_read_write.gpr</vfs_project>
       <vfs_file>/home/wruslan/github-ump/ada-read-write/src/pkg-ada-read-file/pkg_ada_read_file.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 3" line=" 66" >
+    <file_marker column=" 3" line=" 65" >
       <vfs_project>/home/wruslan/github-ump/ada-read-write/ada_read_write.gpr</vfs_project>
       <vfs_file>/home/wruslan/github-ump/ada-read-write/src/main_ada_read_write.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 4" line=" 38" >
+    <file_marker column=" 4" line=" 49" >
       <vfs_project>/home/wruslan/github-ump/ada-read-write/ada_read_write.gpr</vfs_project>
       <vfs_file>/home/wruslan/github-ump/ada-read-write/src/main_ada_read_write.adb</vfs_file>
     </file_marker>
@@ -178,7 +177,7 @@
       <vfs_project>/home/wruslan/github-ump/ada-read-write/ada_read_write.gpr</vfs_project>
       <vfs_file>/home/wruslan/github-ump/ada-read-write/src/main_ada_read_write.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 3" line=" 66" >
+    <file_marker column=" 3" line=" 65" >
       <vfs_project>/home/wruslan/github-ump/ada-read-write/ada_read_write.gpr</vfs_project>
       <vfs_file>/home/wruslan/github-ump/ada-read-write/src/main_ada_read_write.adb</vfs_file>
     </file_marker>
@@ -186,15 +185,15 @@
       <vfs_project>/home/wruslan/github-ump/ada-read-write/ada_read_write.gpr</vfs_project>
       <vfs_file>/home/wruslan/github-ump/ada-read-write/src/pkg-ada-read-file/pkg_ada_read_file.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 3" line=" 66" >
+    <file_marker column=" 3" line=" 65" >
       <vfs_project>/home/wruslan/github-ump/ada-read-write/ada_read_write.gpr</vfs_project>
       <vfs_file>/home/wruslan/github-ump/ada-read-write/src/main_ada_read_write.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 4" line=" 38" >
+    <file_marker column=" 4" line=" 49" >
       <vfs_project>/home/wruslan/github-ump/ada-read-write/ada_read_write.gpr</vfs_project>
       <vfs_file>/home/wruslan/github-ump/ada-read-write/src/main_ada_read_write.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 3" line=" 66" >
+    <file_marker column=" 3" line=" 65" >
       <vfs_project>/home/wruslan/github-ump/ada-read-write/ada_read_write.gpr</vfs_project>
       <vfs_file>/home/wruslan/github-ump/ada-read-write/src/main_ada_read_write.adb</vfs_file>
     </file_marker>
@@ -210,11 +209,11 @@
       <vfs_project>/home/wruslan/github-ump/ada-read-write/ada_read_write.gpr</vfs_project>
       <vfs_file>/home/wruslan/github-ump/ada-read-write/src/pkg-ada-read-file/pkg_ada_read_file.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 3" line=" 66" >
+    <file_marker column=" 3" line=" 65" >
       <vfs_project>/home/wruslan/github-ump/ada-read-write/ada_read_write.gpr</vfs_project>
       <vfs_file>/home/wruslan/github-ump/ada-read-write/src/main_ada_read_write.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 3" line=" 66" >
+    <file_marker column=" 3" line=" 65" >
       <vfs_project>/home/wruslan/github-ump/ada-read-write/ada_read_write.gpr</vfs_project>
       <vfs_file>/home/wruslan/github-ump/ada-read-write/src/main_ada_read_write.adb</vfs_file>
     </file_marker>
@@ -234,7 +233,7 @@
       <vfs_project>/home/wruslan/github-ump/ada-read-write/ada_read_write.gpr</vfs_project>
       <vfs_file>/home/wruslan/github-ump/ada-read-write/src/pkg-ada-read-file/pkg_ada_read_file.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 3" line=" 99" >
+    <file_marker column=" 3" line=" 95" >
       <vfs_project>/home/wruslan/github-ump/ada-read-write/ada_read_write.gpr</vfs_project>
       <vfs_file>/home/wruslan/github-ump/ada-read-write/src/main_ada_read_write.adb</vfs_file>
     </file_marker>
@@ -242,111 +241,207 @@
       <vfs_project>/home/wruslan/github-ump/ada-read-write/ada_read_write.gpr</vfs_project>
       <vfs_file>/home/wruslan/github-ump/ada-read-write/src/main_ada_read_write.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 3" line=" 99" >
+    <file_marker column=" 3" line=" 95" >
       <vfs_project>/home/wruslan/github-ump/ada-read-write/ada_read_write.gpr</vfs_project>
       <vfs_file>/home/wruslan/github-ump/ada-read-write/src/main_ada_read_write.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 22" line=" 95" >
+    <file_marker column=" 12" line=" 94" >
       <vfs_project>/home/wruslan/github-ump/ada-read-write/ada_read_write.gpr</vfs_project>
       <vfs_file>/home/wruslan/github-ump/ada-read-write/src/main_ada_read_write.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 4" line=" 70" >
+    <file_marker column=" 4" line=" 69" >
       <vfs_project>/home/wruslan/github-ump/ada-read-write/ada_read_write.gpr</vfs_project>
       <vfs_file>/home/wruslan/github-ump/ada-read-write/src/main_ada_read_write.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 4" line=" 70" >
+    <file_marker column=" 4" line=" 69" >
       <vfs_project>/home/wruslan/github-ump/ada-read-write/ada_read_write.gpr</vfs_project>
       <vfs_file>/home/wruslan/github-ump/ada-read-write/src/main_ada_read_write.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 4" line=" 70" >
+    <file_marker column=" 4" line=" 69" >
       <vfs_project>/home/wruslan/github-ump/ada-read-write/ada_read_write.gpr</vfs_project>
       <vfs_file>/home/wruslan/github-ump/ada-read-write/src/main_ada_read_write.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 4" line=" 70" >
+    <file_marker column=" 4" line=" 69" >
       <vfs_project>/home/wruslan/github-ump/ada-read-write/ada_read_write.gpr</vfs_project>
       <vfs_file>/home/wruslan/github-ump/ada-read-write/src/main_ada_read_write.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 4" line=" 103" >
+    <file_marker column=" 4" line=" 135" >
       <vfs_project>/home/wruslan/github-ump/ada-read-write/ada_read_write.gpr</vfs_project>
       <vfs_file>/home/wruslan/github-ump/ada-read-write/src/main_ada_read_write.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 14" line=" 77" >
+    <file_marker column=" 14" line=" 76" >
       <vfs_project>/home/wruslan/github-ump/ada-read-write/ada_read_write.gpr</vfs_project>
       <vfs_file>/home/wruslan/github-ump/ada-read-write/src/main_ada_read_write.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 91" line=" 100" >
+    <file_marker column=" 94" line=" 97" >
       <vfs_project>/home/wruslan/github-ump/ada-read-write/ada_read_write.gpr</vfs_project>
       <vfs_file>/home/wruslan/github-ump/ada-read-write/src/main_ada_read_write.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 10" line=" 96" >
+    <file_marker column=" 12" line=" 94" >
       <vfs_project>/home/wruslan/github-ump/ada-read-write/ada_read_write.gpr</vfs_project>
       <vfs_file>/home/wruslan/github-ump/ada-read-write/src/main_ada_read_write.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 75" line=" 93" >
+    <file_marker column=" 12" line=" 94" >
       <vfs_project>/home/wruslan/github-ump/ada-read-write/ada_read_write.gpr</vfs_project>
       <vfs_file>/home/wruslan/github-ump/ada-read-write/src/main_ada_read_write.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 7" line=" 83" >
+    <file_marker column=" 7" line=" 84" >
       <vfs_project>/home/wruslan/github-ump/ada-read-write/ada_read_write.gpr</vfs_project>
       <vfs_file>/home/wruslan/github-ump/ada-read-write/src/main_ada_read_write.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 5" line=" 84" >
+    <file_marker column=" 5" line=" 93" >
       <vfs_project>/home/wruslan/github-ump/ada-read-write/ada_read_write.gpr</vfs_project>
       <vfs_file>/home/wruslan/github-ump/ada-read-write/src/main_ada_read_write.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 20" line=" 39" >
+    <file_marker column=" 20" line=" 50" >
       <vfs_project>/home/wruslan/github-ump/ada-read-write/ada_read_write.gpr</vfs_project>
       <vfs_file>/home/wruslan/github-ump/ada-read-write/src/main_ada_read_write.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 54" line=" 56" >
+    <file_marker column=" 3" line=" 59" >
       <vfs_project>/home/wruslan/github-ump/ada-read-write/ada_read_write.gpr</vfs_project>
       <vfs_file>/home/wruslan/github-ump/ada-read-write/src/main_ada_read_write.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 20" line=" 39" >
+    <file_marker column=" 20" line=" 50" >
       <vfs_project>/home/wruslan/github-ump/ada-read-write/ada_read_write.gpr</vfs_project>
       <vfs_file>/home/wruslan/github-ump/ada-read-write/src/main_ada_read_write.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 59" line=" 95" >
+    <file_marker column=" 12" line=" 94" >
       <vfs_project>/home/wruslan/github-ump/ada-read-write/ada_read_write.gpr</vfs_project>
       <vfs_file>/home/wruslan/github-ump/ada-read-write/src/main_ada_read_write.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 75" line=" 93" >
+    <file_marker column=" 12" line=" 94" >
       <vfs_project>/home/wruslan/github-ump/ada-read-write/ada_read_write.gpr</vfs_project>
       <vfs_file>/home/wruslan/github-ump/ada-read-write/src/main_ada_read_write.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 20" line=" 39" >
+    <file_marker column=" 20" line=" 50" >
       <vfs_project>/home/wruslan/github-ump/ada-read-write/ada_read_write.gpr</vfs_project>
       <vfs_file>/home/wruslan/github-ump/ada-read-write/src/main_ada_read_write.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 4" line=" 96" >
+    <file_marker column=" 12" line=" 94" >
       <vfs_project>/home/wruslan/github-ump/ada-read-write/ada_read_write.gpr</vfs_project>
       <vfs_file>/home/wruslan/github-ump/ada-read-write/src/main_ada_read_write.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 65" line=" 92" >
+    <file_marker column=" 12" line=" 94" >
       <vfs_project>/home/wruslan/github-ump/ada-read-write/ada_read_write.gpr</vfs_project>
       <vfs_file>/home/wruslan/github-ump/ada-read-write/src/main_ada_read_write.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 7" line=" 83" >
+    <file_marker column=" 7" line=" 84" >
       <vfs_project>/home/wruslan/github-ump/ada-read-write/ada_read_write.gpr</vfs_project>
       <vfs_file>/home/wruslan/github-ump/ada-read-write/src/main_ada_read_write.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 5" line=" 84" >
+    <file_marker column=" 5" line=" 93" >
       <vfs_project>/home/wruslan/github-ump/ada-read-write/ada_read_write.gpr</vfs_project>
       <vfs_file>/home/wruslan/github-ump/ada-read-write/src/main_ada_read_write.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 7" line=" 83" >
+    <file_marker column=" 7" line=" 84" >
       <vfs_project>/home/wruslan/github-ump/ada-read-write/ada_read_write.gpr</vfs_project>
       <vfs_file>/home/wruslan/github-ump/ada-read-write/src/main_ada_read_write.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 16" line=" 42" >
+    <file_marker column=" 16" line=" 54" >
       <vfs_project>/home/wruslan/github-ump/ada-read-write/ada_read_write.gpr</vfs_project>
       <vfs_file>/home/wruslan/github-ump/ada-read-write/src/main_ada_read_write.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 76" line=" 95" >
+    <file_marker column=" 12" line=" 94" >
       <vfs_project>/home/wruslan/github-ump/ada-read-write/ada_read_write.gpr</vfs_project>
       <vfs_file>/home/wruslan/github-ump/ada-read-write/src/main_ada_read_write.adb</vfs_file>
     </file_marker>
-    <file_marker current="true" column=" 47" line=" 90" >
+    <file_marker column=" 12" line=" 94" >
+      <vfs_project>/home/wruslan/github-ump/ada-read-write/ada_read_write.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-read-write/src/main_ada_read_write.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 12" line=" 94" >
+      <vfs_project>/home/wruslan/github-ump/ada-read-write/ada_read_write.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-read-write/src/main_ada_read_write.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 12" line=" 94" >
+      <vfs_project>/home/wruslan/github-ump/ada-read-write/ada_read_write.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-read-write/src/main_ada_read_write.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 12" line=" 94" >
+      <vfs_project>/home/wruslan/github-ump/ada-read-write/ada_read_write.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-read-write/src/main_ada_read_write.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 12" line=" 94" >
+      <vfs_project>/home/wruslan/github-ump/ada-read-write/ada_read_write.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-read-write/src/main_ada_read_write.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 12" line=" 94" >
+      <vfs_project>/home/wruslan/github-ump/ada-read-write/ada_read_write.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-read-write/src/main_ada_read_write.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 12" line=" 94" >
+      <vfs_project>/home/wruslan/github-ump/ada-read-write/ada_read_write.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-read-write/src/main_ada_read_write.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 12" line=" 94" >
+      <vfs_project>/home/wruslan/github-ump/ada-read-write/ada_read_write.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-read-write/src/main_ada_read_write.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 35" line=" 54" >
+      <vfs_project>/home/wruslan/github-ump/ada-read-write/ada_read_write.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-read-write/src/main_ada_read_write.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 12" line=" 94" >
+      <vfs_project>/home/wruslan/github-ump/ada-read-write/ada_read_write.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-read-write/src/main_ada_read_write.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 12" line=" 94" >
+      <vfs_project>/home/wruslan/github-ump/ada-read-write/ada_read_write.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-read-write/src/main_ada_read_write.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 12" line=" 94" >
+      <vfs_project>/home/wruslan/github-ump/ada-read-write/ada_read_write.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-read-write/src/main_ada_read_write.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 12" line=" 94" >
+      <vfs_project>/home/wruslan/github-ump/ada-read-write/ada_read_write.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-read-write/src/main_ada_read_write.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 7" line=" 81" >
+      <vfs_project>/home/wruslan/github-ump/ada-read-write/ada_read_write.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-read-write/src/main_ada_read_write.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 10" line=" 83" >
+      <vfs_project>/home/wruslan/github-ump/ada-read-write/ada_read_write.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-read-write/src/main_ada_read_write.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 7" line=" 81" >
+      <vfs_project>/home/wruslan/github-ump/ada-read-write/ada_read_write.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-read-write/src/main_ada_read_write.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 12" line=" 94" >
+      <vfs_project>/home/wruslan/github-ump/ada-read-write/ada_read_write.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-read-write/src/main_ada_read_write.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 91" >
+      <vfs_project>/home/wruslan/github-ump/ada-read-write/ada_read_write.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-read-write/src/main_ada_read_write.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 8" line=" 92" >
+      <vfs_project>/home/wruslan/github-ump/ada-read-write/ada_read_write.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-read-write/src/main_ada_read_write.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 132" >
+      <vfs_project>/home/wruslan/github-ump/ada-read-write/ada_read_write.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-read-write/src/main_ada_read_write.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 45" line=" 122" >
+      <vfs_project>/home/wruslan/github-ump/ada-read-write/ada_read_write.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-read-write/src/main_ada_read_write.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 127" >
+      <vfs_project>/home/wruslan/github-ump/ada-read-write/ada_read_write.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-read-write/src/main_ada_read_write.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 129" >
+      <vfs_project>/home/wruslan/github-ump/ada-read-write/ada_read_write.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-read-write/src/main_ada_read_write.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 125" >
+      <vfs_project>/home/wruslan/github-ump/ada-read-write/ada_read_write.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github-ump/ada-read-write/src/main_ada_read_write.adb</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 17" line=" 111" >
       <vfs_project>/home/wruslan/github-ump/ada-read-write/ada_read_write.gpr</vfs_project>
       <vfs_file>/home/wruslan/github-ump/ada-read-write/src/main_ada_read_write.adb</vfs_file>
     </file_marker>

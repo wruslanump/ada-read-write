@@ -17,7 +17,7 @@ RV NO_DYNAMIC_SIZED_OBJECTS
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U main_ada_read_write%b	main_ada_read_write.adb	0b77b33f NE OO SU IL
+U main_ada_read_write%b	main_ada_read_write.adb	18b61183 NE OO SU IL
 W ada%s			ada.ads			ada.ali
 Z ada.exceptions%s	a-except.adb		a-except.ali
 W ada.real_time%s	a-reatim.adb		a-reatim.ali
@@ -51,7 +51,7 @@ D a-unccon.ads		20200312110721 0e9b276f ada.unchecked_conversion%s
 D interfac.ads		20200312110721 5ab55268 interfaces%s
 D i-c.ads		20200312110721 5421119b interfaces.c%s
 D i-cstrea.ads		20200312110721 e53d8b8e interfaces.c_streams%s
-D main_ada_read_write.adb  20210224020451 4b0f3efd main_ada_read_write%b
+D main_ada_read_write.adb  20210224051922 58ce9c41 main_ada_read_write%b
 D pkg_ada_dtstamp.ads	20210221081420 f15ab596 pkg_ada_dtstamp%s
 D pkg_ada_read_file.ads	20210223114922 bbe7be62 pkg_ada_read_file%s
 D system.ads		20200312110721 4635ec04 system%s
@@ -96,61 +96,60 @@ X 9 a-string.ads
 16K13*Strings 35e16 18|9r10 9r37 24r32
 X 11 a-strunb.ads
 76K21*Unbounded 491e26 18|9w18 9r45 24r40
-79R9*Unbounded_String<5|43R9> 474e14 18|38r24 55r22 63r22
-84V13*Length{natural} 18|94s28
-94V13*To_Unbounded_String{79R9} 18|93s28
-100V13*To_String{string} 18|39s35 105s51 110s45
+79R9*Unbounded_String<5|43R9> 474e14 18|49r24 56r22
+84V13*Length{natural} 18|79s28
+94V13*To_Unbounded_String{79R9} 18|78s28 118s28
+100V13*To_String{string} 18|50s35 90s51 91s45 123s48 124s42
 X 13 a-textio.ads
 49K13*Text_IO 471e16 18|7w10 22r32
-52P9*File_Type 18|32r23 47r26 51r26 60r23
-53E9*File_Mode 53e54 18|33r23 48r26 52r26 61r23
-53n23*In_File{53E9} 18|33r42
-53n32*Out_File{53E9} 18|48r45 52r45
-53n42*Append_File{53E9} 18|61r42
-86U14*Create 18|88s9
-92U14*Open 18|82s9
-98U14*Close 18|122s9 123s9
-118V13*Standard_Output{52P9} 18|105s30 119s24 120s24
-166U14*New_Line 18|70s9 126s9
-183V13*End_Of_File{boolean} 18|92s19
-242U14*Put 18|101s15 102s15
-253V13*Get_Line{string} 18|93s53
-259U14*Put_Line 18|105s15 110s15 119s9 120s9
-263U14*Put_Line 18|68s24 69s24 126s39
+52P9*File_Type 18|31r26 35r26 40r26 44r26
+53E9*File_Mode 53e54 18|32r26 36r26 41r26 45r26
+53n23*In_File{53E9} 18|32r45 41r45
+53n32*Out_File{53E9} 18|36r45 45r45
+86U14*Create 18|71s9
+92U14*Open 18|70s9 111s9 112s9
+98U14*Close 18|100s9 101s9 134s9 135s9
+118V13*Standard_Output{52P9} 18|90s30 97s24 98s24 123s27
+166U14*New_Line 18|64s9 137s9
+183V13*End_Of_File{boolean} 18|76s19 115s19
+242U14*Put 18|86s15 87s15
+253V13*Get_Line{string} 18|78s53 118s53
+259U14*Put_Line 18|90s15 91s15 97s9 98s9 123s12 124s12
+263U14*Put_Line 18|62s24 63s24 137s39
 X 18 main_ada_read_write.adb
-16U11*main_ada_read_write 16b11 128l5 128t24
-22K12 ATIO=22:32 32r18 33r18 33r37 47r21 48r21 48r40 51r21 52r21 52r40 60r18
-. 61r18 61r37 68r19 69r19 70r4 82r4 88r4 92r14 93r48 101r10 102r10 105r10
-. 105r25 110r10 119r4 119r19 120r4 120r19 122r4 123r4 126r4 126r34
+16U11*main_ada_read_write 16b11 139l5 139t24
+22K12 ATIO=22:32 31r21 32r21 32r40 35r21 36r21 36r40 40r21 41r21 41r40 44r21
+. 45r21 45r40 62r19 63r19 64r4 70r4 71r4 76r14 78r48 86r10 87r10 90r10 90r25
+. 91r10 97r4 97r19 98r4 98r19 100r4 101r4 111r4 112r4 115r14 118r48 123r7
+. 123r22 124r7 134r4 135r4 137r4 137r34
 23K12 ART=23:32
-24K12 ASU=24:40 38r20 39r31 55r18 63r18 93r24 94r24 105r47 110r41
-27K12 PADTS=27:28 68r4 69r4 126r19
+24K12 ASU=24:40 49r20 50r31 56r18 78r24 79r24 90r47 91r41 118r24 123r44 124r38
+27K12 PADTS=27:28 62r4 63r4 104r4 137r19
 28K12 PARF=28:28
-32p4 inp_fhandle{13|52P9} 82m15 82r15 92r32 93r63 123m16 123r16
-33e4 inp_fmode{13|53E9} 82r28
-34a4 inp_fname{string} 82r39
-38r4 inp_UBlineStr{11|79R9} 39r45 93m7 94r35 105r62 110r56
-39a4 inp_lineStr{string}
-40i4 len_UBlineStr{natural} 94m7 98r10 102r56
-41i4 inp_lineCnt_All{integer} 90m4 95m7 95r26 101r56 119r83
-42i4 inp_lineCnt_NonZero{integer} 99m10 99r33 120r83
-43a4 inp_sliceStr{string}
-47p4 out_fhandle_00{13|52P9} 88m17 88r17 110r25 122m16 122r16
-48e4 out_fmode_00{13|53E9} 88r33
-49a4 out_fname_00{string} 88r47
-51p4 out_fhandle_01{13|52P9}
-52e4 out_fmode_01{13|53E9}
-53a4 out_fname_01{string}
-55r4 out_lineStr{11|79R9}
-56i4 out_lineCnt{integer}
-60p4 app_fhandle{13|52P9}
-61e4 app_fmode{13|53E9}
-62a4 app_fname{string}
-63r4 app_lineStr{11|79R9}
-64i4 app_lineCnt{integer}
+31p4 inp_fhandle_00{13|52P9} 70m17 70r17 76r32 78r63 101m16 101r16
+32e4 inp_fmode_00{13|53E9} 70r33
+33a4 inp_fname_00{string} 70r47
+35p4 out_fhandle_00{13|52P9} 71m17 71r17 91r25 100m16 100r16
+36e4 out_fmode_00{13|53E9} 71r33
+37a4 out_fname_00{string} 71r47
+40p4 inp_fhandle_01{13|52P9} 111m17 111r17 115r32 118r63 135m16 135r16
+41e4 inp_fmode_01{13|53E9} 111r33
+42a4 inp_fname_01{string} 111r47
+44p4 out_fhandle_01{13|52P9} 112m17 112r17 124r22 134m16 134r16
+45e4 out_fmode_01{13|53E9} 112r33
+46a4 out_fname_01{string} 112r47
+49r4 inp_UBlineStr{11|79R9} 50r45 78m7 79r35 90r62 91r56 118m7 123r59 124r53
+50a4 inp_lineStr{string}
+51i4 len_UBlineStr{natural} 79m7 83r10 87r56
+52i4 inp_lineCnt_All{integer} 73m4 80m7 80r26 86r56 97r83
+53i4 inp_lineCnt_NonZero{integer} 74m4 84m10 84r33 98r83
+54a4 inp_sliceStr{string}
+56r4 out_lineStr{11|79R9}
+57i4 out_lineCnt{integer}
 X 19 pkg_ada_dtstamp.ads
 10K9*pkg_ada_dtstamp 18|12w6 27r28 19|31e20
-17U14*dtstamp 18|68s10 69s10 126s25
+17U14*dtstamp 18|62s10 63s10 137s25
+22U14*exec_delay_sec 18|104s10
 X 20 pkg_ada_read_file.ads
 10K9*pkg_ada_read_file 18|13w6 28r28 20|20e22
 X 21 system.ads

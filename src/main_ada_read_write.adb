@@ -27,14 +27,25 @@ is
    package PADTS   renames pkg_ada_dtstamp;
    package PARF    renames pkg_ada_read_file;
    
-   -- INPUT FILE
-   -- =====================================================
-   inp_fhandle : ATIO.File_Type;
-   inp_fmode   : ATIO.File_Mode  := ATIO.In_File;
-   inp_fname   : String          := "files/bismillah.ngc";
-   --inp_fname   : String          := "files/just-KSG.ngc";
-   --inp_fname   : String          := "files/linuxcnc-logo.ngc";
+   -- PART 1 ==============================================
+   inp_fhandle_00 : ATIO.File_Type;
+   inp_fmode_00   : ATIO.File_Mode  := ATIO.In_File;
+   inp_fname_00   : String          := "files/bismillah.ngc";
+  
+   out_fhandle_00 : ATIO.File_Type;
+   out_fmode_00   : ATIO.File_Mode  := ATIO.Out_File;
+   out_fname_00 : String          := "files/outfile_level_00.txt";
    
+   -- PART 2 ==============================================
+   inp_fhandle_01 : ATIO.File_Type;
+   inp_fmode_01   : ATIO.File_Mode  := ATIO.In_File;
+   inp_fname_01   : String          := "files/outfile_level_00.txt";
+   
+   out_fhandle_01 : ATIO.File_Type;
+   out_fmode_01   : ATIO.File_Mode  := ATIO.Out_File;
+   out_fname_01   : String          := "files/outfile_level_01.txt";
+   
+   -- =======================================================
    inp_UBlineStr : ASU.Unbounded_String;
    inp_lineStr   : String  := ASU.To_String(inp_UBlineStr);
    len_UBlineStr : Natural := 0;
@@ -42,55 +53,29 @@ is
    inp_lineCnt_NonZero : Integer := 0; 
    inp_sliceStr  : String  := " ";
    
-   -- OUTPUT FILE
-   -- =====================================================
-   out_fhandle_00 : ATIO.File_Type;
-   out_fmode_00   : ATIO.File_Mode  := ATIO.Out_File;
-   out_fname_00 : String          := "files/outfile_level_00.txt";
-   
-   out_fhandle_01 : ATIO.File_Type;
-   out_fmode_01   : ATIO.File_Mode  := ATIO.Out_File;
-   out_fname_01 : String          := "files/outfile_level_01.txt";
-   
    out_lineStr : ASU.Unbounded_String;
    out_lineCnt : Integer := 999;
    
-   -- APPEND FILE
-   -- =====================================================
-   app_fhandle : ATIO.File_Type;
-   app_fmode   : ATIO.File_Mode  := ATIO.Append_File;
-   app_fname   : String          := "files/outfile_01.txt";
-   app_lineStr : ASU.Unbounded_String;
-   app_lineCnt : Integer := 999;
       
    
 begin
    PADTS.dtstamp; ATIO.Put_Line ("Bismillah 3 times WRY");
    PADTS.dtstamp; ATIO.Put_Line ("Running inside GNAT Studio Community");
    ATIO.New_Line;
-     
-   -- (1) Read file. OPEN FILE FOR INPUT. inp_fmode := ATIO.In_File
-   -- File must already exist. Open for reading only. Must Open NOT Create.
+   
+    -- =====================================================
+   -- PART 1 Read input file then write output file 
    -- =====================================================
-   -- Read from inp_fhandle (input file) till end of file
-   -- Get string length of line read
-   -- Write read line to Standard_Output (terminal)
-   -- Count total lines in file.
-   -- REF: https://en.wikibooks.org/wiki/Ada_Programming/Libraries/Ada.Strings.Unbounded
-   -- REF: https://www.radford.edu/~nokie/classes/320/stringio.html
-   
-   ATIO.Open (inp_fhandle, inp_fmode, inp_fname);
-   
-   
-   -- CREATE FILE FOR OUTPUT. 
-   -- New file. If already exists, wipes out previous file.
-   -- Must Create NOT Open. Create for writing only.
+   -- Input file -- Output file
+   ATIO.Open   (inp_fhandle_00, inp_fmode_00, inp_fname_00);
    ATIO.Create (out_fhandle_00, out_fmode_00, out_fname_00);
       
-   inp_lineCnt_All := 0;
-   
-   while not ATIO.End_Of_File (inp_fhandle) loop
-      inp_UBlineStr := ASU.To_Unbounded_String(ATIO.Get_Line (inp_fhandle));
+   inp_lineCnt_All     := 0;
+   inp_lineCnt_NonZero := 0;
+     
+   while not ATIO.End_Of_File (inp_fhandle_00) loop
+      
+      inp_UBlineStr := ASU.To_Unbounded_String(ATIO.Get_Line (inp_fhandle_00));
       len_UBlineStr := ASU.Length(inp_UBlineStr);
       inp_lineCnt_All := inp_lineCnt_All + 1;
       
@@ -101,27 +86,53 @@ begin
          ATIO.Put ("inp_lineCnt = "   & Integer'image (inp_lineCnt_All) & " ");
          ATIO.Put ("len_UBlineStr = " & Natural'Image (len_UBlineStr) & " ");
          
-         -- WRITE OUTPUT TO SCREEN TERMINAL (Standard_Output) 
+         -- WRITE OUTPUT TO SCREEN TERMINAL (Standard_Output) AND FILE
          ATIO.Put_Line (ATIO.Standard_Output, ASU.To_String (inp_UBLineStr)); 
-         -- ATIO.Set_Output(ATIO.Standard_Output);
-         -- ATIO.Put_Line (ASU.To_String (inp_UBLineStr)); 
-         
-         -- WRITE OUTPUT TO TEXT FILE out_fname_00 = "files/outfile_level_00.txt"; 
          ATIO.Put_Line (out_fhandle_00, ASU.To_String (inp_UBLineStr)); 
-         -- ATIO.Set_Output(out_fhandle_00);
-         -- ATIO.Put_Line (ASU.To_String (inp_UBLineStr)); 
-         
+                
       end if;
-      -- ATIO.Set_Output(ATIO.Standard_Output);  -- Reset display to terminal
-           
+                 
    end loop;
    
    ATIO.Put_Line (ATIO.Standard_Output, "Total lines read    = " & Integer'Image (inp_lineCnt_All));
    ATIO.Put_Line (ATIO.Standard_Output, "Non-zero lines read = " & Integer'Image (inp_lineCnt_NonZero));
    
    ATIO.Close (out_fhandle_00);
-   ATIO.Close (inp_fhandle);
+   ATIO.Close (inp_fhandle_00);
    
+   -- Delay to make closing files take effect
+   PADTS.exec_delay_sec (5);
+   
+   
+   -- =====================================================
+   -- PART 2
+   -- =====================================================
+   -- Input file  -- Output file
+   ATIO.Open   (inp_fhandle_01, inp_fmode_01, inp_fname_01);
+   ATIO.Open   (out_fhandle_01, out_fmode_01, out_fname_01);
+     
+   -- READLINE FROM INPUT FILE LINE-BY-LINE
+   while not ATIO.End_Of_File (inp_fhandle_01) loop
+      
+      
+      inp_UBlineStr := ASU.To_Unbounded_String(ATIO.Get_Line (inp_fhandle_01));
+      
+      
+      -- WRITE TO OUTPUT FILE  AND TO TERMINAL 
+      -- =====================================================
+      ATIO.Put_Line (ATIO.Standard_Output, ASU.To_String (inp_UBLineStr)); 
+      ATIO.Put_Line (out_fhandle_01, ASU.To_String (inp_UBLineStr));
+   
+      
+   
+   
+   
+   
+      
+   end loop;   
+   
+   ATIO.Close (out_fhandle_01);
+   ATIO.Close (inp_fhandle_01);
          
    ATIO.New_Line; PADTS.dtstamp; ATIO.Put_Line ("Alhamdulillah 3 times WRY");
 -- ========================================================   
