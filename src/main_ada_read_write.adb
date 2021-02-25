@@ -82,8 +82,8 @@ is
    len_UBlineStr : Natural := 0;
    inp_lineCnt_All     : Integer := 0;
    inp_lineCnt_NonZero : Integer := 0; 
-   inp_firstChar       : String  := "1";
-   inp_first3Chars     : String  := "123"; --DUMMY
+   inp_firstChar       : String  := "1";   -- DUMMY
+   inp_first3Chars     : String  := "123"; -- DUMMY
    
    out_lineStr : ASU.Unbounded_String;
    out_lineCnt : Integer := 999;
@@ -95,6 +95,12 @@ is
    out_countG02 : Integer := 0; -- (clockwise arc move) 
    out_countG03 : Integer := 0; -- (counter-clockwise arc move)
    out_countG21 : Integer := 0; -- (G21 - All units in mm)
+   
+   rand_int     : Integer := 999;  
+   rand_float   : Float   := 999.99; 
+   
+   writeout_fmode : ATIO.File_Mode := ATIO.Out_File;
+   writeout_fname : String := "files/random_integers_floats.txt";
    
 begin
    PADTS.dtstamp; ATIO.Put_Line ("Bismillah 3 times WRY");
@@ -116,11 +122,9 @@ begin
    ATIO.Put_Line ("====================================================");
    ATIO.Put_Line ("(3) PAWDF - Package Ada Write Display File");
    ATIO.Put_Line ("=====================================================");
-   -- PAWDF.exec_write_display_file (out_fmode, out_fname);
+   PAWDF.exec_write_display_file (writeout_fmode, writeout_fname);
    
-   -- Generate random integers and floats
-   -- Write to file random integers and floats
-   -- Write to terminal random integers and floats
+   
    
    ATIO.New_Line;
    -- =====================================================

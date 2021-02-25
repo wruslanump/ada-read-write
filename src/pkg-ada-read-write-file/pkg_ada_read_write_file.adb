@@ -51,6 +51,10 @@ is
       
    begin
       ATIO.Put_Line("Run exec_read_write_file (inp_fmode, inp_fname, out_fmode, out_fname)");
+      ATIO.Put_Line("inp_fmode = ATIO.In_File ");
+      ATIO.Put_Line("inp_fname = " & (inp_fname));
+      ATIO.Put_Line("out_fmode = ATIO.Out_File ");
+      ATIO.Put_Line("out_fname = " & (out_fname));
       
       ATIO.Put_Line("ToOpen   inp_fname = " & inp_fname);
       ATIO.Open (inp_fhandle, inp_fmode, inp_fname); 
@@ -79,9 +83,7 @@ is
          ATIO.Put_Line (out_fhandle, ASU.To_String (inp_UBlineStr)); 
          
       end loop;   
-      
-      
-      
+            
       ATIO.Close(inp_fhandle);
       ATIO.Close(out_fhandle);
       

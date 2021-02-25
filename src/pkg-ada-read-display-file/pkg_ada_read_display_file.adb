@@ -58,7 +58,10 @@ is
    is
       
    begin
-      ATIO.Put_Line("Run exec_read_display_file (inp_fmode, inp_fname");
+      ATIO.Put_Line("Run exec_read_display_file (inp_fmode, inp_fname)");
+      ATIO.Put_Line("inp_fmode = ATIO.In_File ");
+      ATIO.Put_Line("inp_fname = " & (inp_fname));
+      
       ATIO.Put_Line("ToOpen inp_fname = " & inp_fname);
       ATIO.Open (inp_fhandle, inp_fmode, inp_fname); 
       ATIO.Put_Line("Opened inp_fname = " & inp_fname & " successfully.");

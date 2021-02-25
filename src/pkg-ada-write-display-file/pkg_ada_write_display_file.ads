@@ -17,8 +17,9 @@ is
    
 -- LIST OF PROCEDURES   
    procedure about_pkg_ada_write_display_file; 
-   procedure open_inp_textfile (fhandle: out AATIO.File_Type; fmode : in AATIO.File_Mode; fname : in String);	  
-
+   
+   procedure exec_write_display_file (out_fmode : in AATIO.File_Mode; out_fname : in String);
+   
 -- LIST OF FUNCTIONS   
    
    

@@ -9,6 +9,7 @@ RN
 RV NO_DIRECT_BOOLEAN_OPERATORS
 RV NO_EXCEPTION_HANDLERS
 RV NO_EXCEPTIONS
+RV NO_FLOATING_POINT
 RV NO_IO
 RV NO_NESTED_FINALIZATION
 RV NO_SECONDARY_STACK
@@ -18,7 +19,7 @@ RV NO_DYNAMIC_SIZED_OBJECTS
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U main_ada_read_write%b	main_ada_read_write.adb	4e7c4d83 NE OO SU IL
+U main_ada_read_write%b	main_ada_read_write.adb	9df31e2f NE OO SU IL
 W ada%s			ada.ads			ada.ali
 Z ada.exceptions%s	a-except.adb		a-except.ali
 W ada.real_time%s	a-reatim.adb		a-reatim.ali
@@ -55,12 +56,12 @@ D a-unccon.ads		20200312110721 0e9b276f ada.unchecked_conversion%s
 D interfac.ads		20200312110721 5ab55268 interfaces%s
 D i-c.ads		20200312110721 5421119b interfaces.c%s
 D i-cstrea.ads		20200312110721 e53d8b8e interfaces.c_streams%s
-D main_ada_read_write.adb  20210224145027 ba673c76 main_ada_read_write%b
+D main_ada_read_write.adb  20210225022516 7d4974a3 main_ada_read_write%b
 D pkg_ada_dtstamp.ads	20210221081420 f15ab596 pkg_ada_dtstamp%s
 D pkg_ada_random.ads	20210221153352 03e92377 pkg_ada_random%s
 D pkg_ada_read_display_file.ads  20210224142930 f2708e61 pkg_ada_read_display_file%s
 D pkg_ada_read_write_file.ads  20210224144526 4635a142 pkg_ada_read_write_file%s
-D pkg_ada_write_display_file.ads  20210224120911 b8284e01 pkg_ada_write_display_file%s
+D pkg_ada_write_display_file.ads  20210225020241 ac895578 pkg_ada_write_display_file%s
 D system.ads		20200312110721 4635ec04 system%s
 D s-atacco.ads		20200312110721 4c36d12f system.address_to_access_conversions%s
 D s-atocou.ads		20200312110721 b45c2d8d system.atomic_counters%s
@@ -104,111 +105,117 @@ X 9 a-string.ads
 X 11 a-strunb.ads
 76K21*Unbounded 491e26 18|9w18 9r45 27r40
 79R9*Unbounded_String<5|43R9> 474e14 18|80r24 88r22
-84V13*Length{natural} 18|140s28
-94V13*To_Unbounded_String{79R9} 18|139s28 180s28 228s28
-100V13*To_String{string} 18|81s35 151s51 152s45 182s28 195s51 196s45 231s30
-. 232s30
-153V13*Unbounded_Slice{79R9} 18|182s43 231s45 232s45
+84V13*Length{natural} 18|146s28
+94V13*To_Unbounded_String{79R9} 18|145s28 186s28 234s28
+100V13*To_String{string} 18|81s35 157s51 158s45 188s28 201s51 202s45 237s30
+. 238s30
+153V13*Unbounded_Slice{79R9} 18|188s43 237s45 238s45
 X 13 a-textio.ads
 49K13*Text_IO 471e16 18|7w10 25r32
 52P9*File_Type 18|37r26 43r26 48r26 52r26 57r26 61r26
 53E9*File_Mode 53e54 18|38r26 44r26 49r26 53r26 58r26 62r26 68r23 71r23 74r23
+. 102r26
 53n23*In_File{53E9} 18|38r45 49r45 58r45 68r42
-53n32*Out_File{53E9} 18|44r45 53r45 62r45 71r42
+53n32*Out_File{53E9} 18|44r45 53r45 62r45 71r42 102r44
 53n42*Append_File{53E9} 18|74r42
-86U14*Create 18|129s9 173s9 212s9
-92U14*Open 18|128s9 172s9 211s9
-98U14*Close 18|161s9 162s9 202s9 203s9 293s9 294s9
-114U14*Set_Output 18|267s9 280s9
-118V13*Standard_Output{52P9} 18|151s30 158s24 159s24 195s30 280s25
-166U14*New_Line 18|102s9 109s9 115s9 123s9 169s9 208s9 268s9 276s9 281s9
-. 289s9 298s9 303s9
-183V13*End_Of_File{boolean} 18|137s19 179s19 227s19
-242U14*Put 18|147s15 148s15
-253V13*Get_Line{string} 18|139s53 180s53 228s53
-259U14*Put_Line 18|151s15 152s15 158s9 159s9 195s15 196s15
-263U14*Put_Line 18|100s24 101s24 104s9 105s9 106s9 110s9 111s9 112s9 116s9
-. 117s9 118s9 131s9 132s9 167s9 168s9 175s9 176s9 206s9 207s9 214s9 215s9
-. 261s15 269s9 270s9 271s9 272s9 273s9 274s9 275s9 277s9 282s9 283s9 284s9
-. 285s9 286s9 287s9 288s9 290s9 303s39
+86U14*Create 18|135s9 179s9 218s9
+92U14*Open 18|134s9 178s9 217s9
+98U14*Close 18|167s9 168s9 208s9 209s9 299s9 300s9
+114U14*Set_Output 18|273s9 286s9
+118V13*Standard_Output{52P9} 18|157s30 164s24 165s24 201s30 286s25
+166U14*New_Line 18|108s9 115s9 121s9 129s9 175s9 214s9 274s9 282s9 287s9
+. 295s9 304s9 309s9
+183V13*End_Of_File{boolean} 18|143s19 185s19 233s19
+242U14*Put 18|153s15 154s15
+253V13*Get_Line{string} 18|145s53 186s53 234s53
+259U14*Put_Line 18|157s15 158s15 164s9 165s9 201s15 202s15
+263U14*Put_Line 18|106s24 107s24 110s9 111s9 112s9 116s9 117s9 118s9 122s9
+. 123s9 124s9 137s9 138s9 173s9 174s9 181s9 182s9 212s9 213s9 220s9 221s9
+. 267s15 275s9 276s9 277s9 278s9 279s9 280s9 281s9 283s9 288s9 289s9 290s9
+. 291s9 292s9 293s9 294s9 296s9 309s39
 X 18 main_ada_read_write.adb
-19U11*main_ada_read_write 19b11 305l5 305t24
+19U11*main_ada_read_write 19b11 311l5 311t24
 25K12 ATIO=25:32 37r21 38r21 38r40 43r21 44r21 44r40 48r21 49r21 49r40 52r21
 . 53r21 53r40 57r21 58r21 58r40 61r21 62r21 62r40 68r18 68r37 71r18 71r37
-. 74r18 74r37 100r19 101r19 102r4 104r4 105r4 106r4 109r4 110r4 111r4 112r4
-. 115r4 116r4 117r4 118r4 123r4 128r4 129r4 131r4 132r4 137r14 139r48 147r10
-. 148r10 151r10 151r25 152r10 158r4 158r19 159r4 159r19 161r4 162r4 167r4
-. 168r4 169r4 172r4 173r4 175r4 176r4 179r14 180r48 195r10 195r25 196r10
-. 202r4 203r4 206r4 207r4 208r4 211r4 212r4 214r4 215r4 227r14 228r48 261r10
-. 267r4 268r4 269r4 270r4 271r4 272r4 273r4 274r4 275r4 276r4 277r4 280r4
-. 280r20 281r4 282r4 283r4 284r4 285r4 286r4 287r4 288r4 289r4 290r4 293r4
-. 294r4 298r4 303r4 303r34
+. 74r18 74r37 102r21 102r39 106r19 107r19 108r4 110r4 111r4 112r4 115r4 116r4
+. 117r4 118r4 121r4 122r4 123r4 124r4 129r4 134r4 135r4 137r4 138r4 143r14
+. 145r48 153r10 154r10 157r10 157r25 158r10 164r4 164r19 165r4 165r19 167r4
+. 168r4 173r4 174r4 175r4 178r4 179r4 181r4 182r4 185r14 186r48 201r10 201r25
+. 202r10 208r4 209r4 212r4 213r4 214r4 217r4 218r4 220r4 221r4 233r14 234r48
+. 267r10 273r4 274r4 275r4 276r4 277r4 278r4 279r4 280r4 281r4 282r4 283r4
+. 286r4 286r20 287r4 288r4 289r4 290r4 291r4 292r4 293r4 294r4 295r4 296r4
+. 299r4 300r4 304r4 309r4 309r34
 26K12 ART=26:32
-27K12 ASU=27:40 80r20 81r31 88r18 139r24 140r24 151r47 152r41 180r24 182r24
-. 182r39 195r47 196r41 228r24 231r26 231r41 232r26 232r41
-30K12 PADTS=30:28 100r4 101r4 163r4 204r4 295r4 303r19
+27K12 ASU=27:40 80r20 81r31 88r18 145r24 146r24 157r47 158r41 186r24 188r24
+. 188r39 201r47 202r41 234r24 237r26 237r41 238r26 238r41
+30K12 PADTS=30:28 106r4 107r4 169r4 210r4 301r4 309r19
 31K12 PAR=31:28
-32K12 PARDF=32:28 107r4 299r4
-33K12 PARWF=33:28 113r4 300r4
-34K12 PAWDF=34:28 301r4
-37p4 inp_fhandle_00{13|52P9} 128m17 128r17 137r32 139r63 162m16 162r16
-38e4 inp_fmode_00{13|53E9} 128r33
-39a4 inp_fname_00{string} 128r47
-43p4 out_fhandle_00{13|52P9} 129m17 129r17 152r25 161m16 161r16
-44e4 out_fmode_00{13|53E9} 129r33
-45a4 out_fname_00{string} 129r47
-48p4 inp_fhandle_01{13|52P9} 172m17 172r17 179r32 180r63 203m16 203r16
-49e4 inp_fmode_01{13|53E9} 172r33
-50a4 inp_fname_01{string} 172r47
-52p4 out_fhandle_01{13|52P9} 173m17 173r17 196r25 202m16 202r16
-53e4 out_fmode_01{13|53E9} 173r33
-54a4 out_fname_01{string} 173r47
-57p4 inp_fhandle_02{13|52P9} 211m17 211r17 227r32 228r63 294m16 294r16
-58e4 inp_fmode_02{13|53E9} 211r33
-59a4 inp_fname_02{string} 211r47
-61p4 out_fhandle_02{13|52P9} 212m17 212r17 267r20 293m16 293r16
-62e4 out_fmode_02{13|53E9} 212r33
-63a4 out_fname_02{string} 212r47
-68e4 inp_fmode{13|53E9} 107r34 113r32
-69a4 inp_fname{string} 107r45 113r43
-71e4 out_fmode{13|53E9} 113r54
-72a4 out_fname{string} 113r65
+32K12 PARDF=32:28 113r4 305r4
+33K12 PARWF=33:28 119r4 306r4
+34K12 PAWDF=34:28 125r4 307r4
+37p4 inp_fhandle_00{13|52P9} 134m17 134r17 143r32 145r63 168m16 168r16
+38e4 inp_fmode_00{13|53E9} 134r33
+39a4 inp_fname_00{string} 134r47
+43p4 out_fhandle_00{13|52P9} 135m17 135r17 158r25 167m16 167r16
+44e4 out_fmode_00{13|53E9} 135r33
+45a4 out_fname_00{string} 135r47
+48p4 inp_fhandle_01{13|52P9} 178m17 178r17 185r32 186r63 209m16 209r16
+49e4 inp_fmode_01{13|53E9} 178r33
+50a4 inp_fname_01{string} 178r47
+52p4 out_fhandle_01{13|52P9} 179m17 179r17 202r25 208m16 208r16
+53e4 out_fmode_01{13|53E9} 179r33
+54a4 out_fname_01{string} 179r47
+57p4 inp_fhandle_02{13|52P9} 217m17 217r17 233r32 234r63 300m16 300r16
+58e4 inp_fmode_02{13|53E9} 217r33
+59a4 inp_fname_02{string} 217r47
+61p4 out_fhandle_02{13|52P9} 218m17 218r17 273r20 299m16 299r16
+62e4 out_fmode_02{13|53E9} 218r33
+63a4 out_fname_02{string} 218r47
+68e4 inp_fmode{13|53E9} 113r34 119r32
+69a4 inp_fname{string} 113r45 119r43
+71e4 out_fmode{13|53E9} 119r54
+72a4 out_fname{string} 119r65
 74e4 app_fmode{13|53E9}
 75a4 app_fname{string}
-80r4 inp_UBlineStr{11|79R9} 81r45 139m7 140r35 151r62 152r56 180m7 182r59
-. 195r62 196r56 228m7 231r61 232r61
+80r4 inp_UBlineStr{11|79R9} 81r45 145m7 146r35 157r62 158r56 186m7 188r59
+. 201r62 202r56 234m7 237r61 238r61
 81a4 inp_lineStr{string}
-82i4 len_UBlineStr{natural} 140m7 144r10 148r56
-83i4 inp_lineCnt_All{integer} 134m4 141m7 141r26 147r56 158r83
-84i4 inp_lineCnt_NonZero{integer} 135m4 145m10 145r33 159r83
-85a4 inp_firstChar{string} 182m7 186r13 187r13 188r13 231m7 236r11 240r11
-86a4 inp_first3Chars{string} 232m7 245r14 248r14 251r14 254r14 257r14 261r55
+82i4 len_UBlineStr{natural} 146m7 150r10 154r56
+83i4 inp_lineCnt_All{integer} 140m4 147m7 147r26 153r56 164r83
+84i4 inp_lineCnt_NonZero{integer} 141m4 151m10 151r33 165r83
+85a4 inp_firstChar{string} 188m7 192r13 193r13 194r13 237m7 242r11 246r11
+86a4 inp_first3Chars{string} 238m7 251r14 254r14 257r14 260r14 263r14 267r55
 88r4 out_lineStr{11|79R9}
-89i4 out_lineCnt{integer} 224m4 229m7 229r23 277r52 290r52
-91i4 out_countG{integer} 217m4 237m10 237r24 270r52 283r52
-92i4 out_countHash{integer} 223m4 241m10 241r27 269r53 282r53
-93i4 out_countG00{integer} 218m4 246m10 246r26 271r52 284r52
-94i4 out_countG01{integer} 219m4 249m10 249r26 272r52 285r52
-95i4 out_countG02{integer} 220m4 252m10 252r26 273r52 286r52
-96i4 out_countG03{integer} 221m4 255m10 255r26 274r52 287r52
-97i4 out_countG21{integer} 222m4 258m10 258r26 275r52 288r52
+89i4 out_lineCnt{integer} 230m4 235m7 235r23 283r52 296r52
+91i4 out_countG{integer} 223m4 243m10 243r24 276r52 289r52
+92i4 out_countHash{integer} 229m4 247m10 247r27 275r53 288r53
+93i4 out_countG00{integer} 224m4 252m10 252r26 277r52 290r52
+94i4 out_countG01{integer} 225m4 255m10 255r26 278r52 291r52
+95i4 out_countG02{integer} 226m4 258m10 258r26 279r52 292r52
+96i4 out_countG03{integer} 227m4 261m10 261r26 280r52 293r52
+97i4 out_countG21{integer} 228m4 264m10 264r26 281r52 294r52
+99i4 rand_int{integer}
+100f4 rand_float{float}
+102e4 writeout_fmode{13|53E9} 125r35
+103a4 writeout_fname{string} 125r51
 X 19 pkg_ada_dtstamp.ads
 10K9*pkg_ada_dtstamp 18|12w6 30r28 19|31e20
-17U14*dtstamp 18|100s10 101s10 303s25
-22U14*exec_delay_sec 18|163s10 204s10 295s10
+17U14*dtstamp 18|106s10 107s10 309s25
+22U14*exec_delay_sec 18|169s10 210s10 301s10
 X 20 pkg_ada_random.ads
 3K9*pkg_ada_random 18|13w6 31r28 20|14e19
 X 21 pkg_ada_read_display_file.ads
 10K9*pkg_ada_read_display_file 18|14w6 32r28 21|24e30
-18U14*exec_read_display_file 18|107s10
-19U14*about_pkg_ada_read_display_file 18|299s10
+18U14*exec_read_display_file 18|113s10
+19U14*about_pkg_ada_read_display_file 18|305s10
 X 22 pkg_ada_read_write_file.ads
 10K9*pkg_ada_read_write_file 18|15w6 33r28 22|25e28
-18U14*exec_read_write_file 18|113s10
-21U14*about_pkg_ada_read_write_file 18|300s10
+18U14*exec_read_write_file 18|119s10
+21U14*about_pkg_ada_read_write_file 18|306s10
 X 23 pkg_ada_write_display_file.ads
-10K9*pkg_ada_write_display_file 18|16w6 34r28 23|26e31
-19U14*about_pkg_ada_write_display_file 18|301s10
+10K9*pkg_ada_write_display_file 18|16w6 34r28 23|27e31
+19U14*about_pkg_ada_write_display_file 18|307s10
+21U14*exec_write_display_file 18|125s10
 X 24 system.ads
 67M9*Address
 X 36 s-memory.ads

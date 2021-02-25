@@ -37,7 +37,7 @@ package ada_main is
    pragma Export (C, main, "main");
 
    type Version_32 is mod 2 ** 32;
-   u00001 : constant Version_32 := 16#4e7c4d83#;
+   u00001 : constant Version_32 := 16#9df31e2f#;
    pragma Export (C, u00001, "main_ada_read_writeB");
    u00002 : constant Version_32 := 16#050ff2f0#;
    pragma Export (C, u00002, "system__standard_libraryB");
@@ -467,17 +467,17 @@ package ada_main is
    pragma Export (C, u00214, "system__img_lluB");
    u00215 : constant Version_32 := 16#3b7a9044#;
    pragma Export (C, u00215, "system__img_lluS");
-   u00216 : constant Version_32 := 16#1e6dd63c#;
+   u00216 : constant Version_32 := 16#c74e269e#;
    pragma Export (C, u00216, "pkg_ada_read_display_fileB");
    u00217 : constant Version_32 := 16#7a6d3d3b#;
    pragma Export (C, u00217, "pkg_ada_read_display_fileS");
-   u00218 : constant Version_32 := 16#bdba74cb#;
+   u00218 : constant Version_32 := 16#a65d5ce7#;
    pragma Export (C, u00218, "pkg_ada_read_write_fileB");
    u00219 : constant Version_32 := 16#ce281218#;
    pragma Export (C, u00219, "pkg_ada_read_write_fileS");
-   u00220 : constant Version_32 := 16#b36d571e#;
+   u00220 : constant Version_32 := 16#45642e0c#;
    pragma Export (C, u00220, "pkg_ada_write_display_fileB");
-   u00221 : constant Version_32 := 16#3035fd5b#;
+   u00221 : constant Version_32 := 16#2494e622#;
    pragma Export (C, u00221, "pkg_ada_write_display_fileS");
    u00222 : constant Version_32 := 16#2323a8af#;
    pragma Export (C, u00222, "system__memoryB");
